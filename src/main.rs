@@ -3,7 +3,7 @@ use axum::{routing::get, Router};
 async fn hello() -> String {
     let my_local_ip = local_ip_address::local_ip().unwrap().to_string();
 
-    format!("hello there test{}", my_local_ip)
+    format!("Testing. Cluster ip is: {}", my_local_ip)
 }
 
 #[tokio::main]
